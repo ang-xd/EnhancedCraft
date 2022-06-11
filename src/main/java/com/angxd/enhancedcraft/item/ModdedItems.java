@@ -13,7 +13,13 @@ public class ModdedItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, EnhancedCraft.MOD_ID);
 
     public static final RegistryObject<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModdedFoods.CHOCOLATE_BAR).stacksTo(4)));
+
+    public static final RegistryObject<Item> BURGER = ITEMS.register("burger",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModdedFoods.BURGER)));
+
+    public static final RegistryObject<Item> HOTDOG = ITEMS.register("hotdog",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModdedFoods.HOTDOG)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
