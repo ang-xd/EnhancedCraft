@@ -1,5 +1,6 @@
 package com.angxd.enhancedcraft;
 
+import com.angxd.enhancedcraft.block.ModdedBlocks;
 import com.angxd.enhancedcraft.item.ModdedItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -33,6 +34,7 @@ public class EnhancedCraft
 
         // Register new content
         ModdedItems.register(modEventBus);
+        ModdedBlocks.register(modEventBus);
 
         modEventBus.addListener(this::setup);
 
@@ -43,6 +45,7 @@ public class EnhancedCraft
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
+        LOGGER.info("So it has updated");
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }

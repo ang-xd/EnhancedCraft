@@ -1,5 +1,13 @@
 {
   "item.enhancedcraft.chocolate_bar": "Chocolate Bar",
   "item.enhancedcraft.burger": "Burger",
-  "item.enhancedcraft.hotdog": "Hotdog"
+  "item.enhancedcraft.hotdog": "Hotdog",
+
+  "item.enhancedcraft.titanium_sword": "Titanium Sword",
+  "item.enhancedcraft.titanium_pickaxe": "Titanium Pickaxe",
+  "item.enhancedcraft.titanium_axe": "Titanium Axe",
+
+  "item.enhancedcraft.raw_titanium": "Raw Titanium",
+  "item.enhancedcraft.titanium_ingot": "Titanium Ingot",
+  "block.enhancedcraft.titanium_ore": "Titanium Ore"
 }
