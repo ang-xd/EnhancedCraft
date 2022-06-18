@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "STS",
+    "DDD"
+  ],
+  "key": {
+    "T": {
+      "item": "enhancedcraft:titanium_ingot"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "D": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "result": {
+    "item": "enhancedcraft:titanium_trap",
+    "count": 1
+  }
+}

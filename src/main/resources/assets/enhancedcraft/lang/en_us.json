@@ -3,11 +3,41 @@
   "item.enhancedcraft.burger": "Burger",
   "item.enhancedcraft.hotdog": "Hotdog",
 
+  "block.enhancedcraft.titanium_trap": "Titanium Trap",
+
   "item.enhancedcraft.titanium_sword": "Titanium Sword",
   "item.enhancedcraft.titanium_pickaxe": "Titanium Pickaxe",
+  "item.enhancedcraft.titanium_shovel": "Titanium Shovel",
   "item.enhancedcraft.titanium_axe": "Titanium Axe",
+  "item.enhancedcraft.titanium_hoe": "Titanium Hoe",
+
+  "item.enhancedcraft.endzite_sword": "Endzite Sword",
+  "item.enhancedcraft.endzite_pickaxe": "Endzite Pickaxe",
+  "item.enhancedcraft.endzite_shovel": "Endzite Shovel",
+  "item.enhancedcraft.endzite_axe": "Endzite Axe",
+  "item.enhancedcraft.endzite_hoe": "Endzite Hoe",
+
+  "block.enhancedcraft.endzite_ore": "Endzite Ore",
+  "block.enhancedcraft.endzite_block": "Endzite Block",
+  "item.enhancedcraft.endzite_shard": "Endzite Shard",
+  "item.enhancedcraft.endzite_crystal": "Endzite Crystal",
+  "item.enhancedcraft.end_stick": "End Stick",
+
+  "block.enhancedcraft.fireite_ore": "Fireite Ore",
+  "item.enhancedcraft.dull_fireite": "Dull Fireite",
+  "item.enhancedcraft.fireite": "Fireite",
+
+  "entity.enhancedcraft.enderking": "Enderking",
+  "item.enhancedcraft.enderking_spawn_egg": "Enderking Spawn Egg",
 
   "item.enhancedcraft.raw_titanium": "Raw Titanium",
   "item.enhancedcraft.titanium_ingot": "Titanium Ingot",
-  "block.enhancedcraft.titanium_ore": "Titanium Ore"
+  "block.enhancedcraft.titanium_ore": "Titanium Ore",
+  "block.enhancedcraft.titanium_block": "Titanium Block",
+  "block.enhancedcraft.raw_titanium_block": "Block of Raw Titanium",
+  "block.enhancedcraft.deepslate_titanium_ore": "Deepslate Titanium Ore",
+
+  "sounds.enhancedcraft.titanium_trap_kill": "Titanium Trap Kill Sound",
+
+  "itemGroup.enhancedcraft_tab": "Enhanced Craft"
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "enhancedcraft:endzite_block"
+    }
+  ],
+  "result": {
+    "item": "enhancedcraft:endzite_crystal",
+    "count": 9
+  }
+}

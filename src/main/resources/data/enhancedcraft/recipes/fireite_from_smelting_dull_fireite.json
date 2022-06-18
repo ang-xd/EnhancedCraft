@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "enhancedcraft:dull_fireite"
+  },
+  "result": "enhancedcraft:fireite",
+  "experience": 1.2,
+  "cookingtime": 420
+}

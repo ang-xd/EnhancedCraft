@@ -1,0 +1,8 @@
+{
+  "titanium_trap_kill": {
+    "subtitle": "sounds.titanium_trap_kill",
+    "sounds": [
+        "enhancedcraft:titanium_trap_kill"
+    ]
+  }
+}

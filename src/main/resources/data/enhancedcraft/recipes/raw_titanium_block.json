@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "enhancedcraft:raw_titanium"
+    }
+  },
+  "result": {
+    "item": "enhancedcraft:raw_titanium_block"
+  }
+}

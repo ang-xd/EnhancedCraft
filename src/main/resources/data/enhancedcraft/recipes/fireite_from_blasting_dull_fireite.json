@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "enhancedcraft:dull_fireite"
+  },
+  "result": "enhancedcraft:fireite",
+  "experience": 1.4,
+  "cookingtime": 300
+}

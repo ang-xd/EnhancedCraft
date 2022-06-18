@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "enhancedcraft:block/titanium_trap" },
+    "facing=east": { "model": "enhancedcraft:block/titanium_trap", "y": 90 },
+    "facing=south": { "model": "enhancedcraft:block/titanium_trap", "y": 180 },
+    "facing=west": { "model": "enhancedcraft:block/titanium_trap", "y": 270 }
+  }
+}

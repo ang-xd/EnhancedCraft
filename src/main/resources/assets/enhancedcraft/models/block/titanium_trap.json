@@ -1,0 +1,103 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "textures": {
+    "particle": "enhancedcraft:block/titanium_block"
+  },
+  "texture_size": [
+    64,
+    64
+  ],
+  "gui_light": "front",
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [
+        -0.2,
+        0.2,
+        -0.2
+      ]
+    },
+    "thirdperson_lefthand": {
+      "scale": [
+        -0.2,
+        0.2,
+        -0.2
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -1.99,
+        -0.05,
+        -1.75
+      ],
+      "translation": [
+        1.75,
+        0,
+        0
+      ],
+      "scale": [
+        -0.2,
+        0.2,
+        -0.2
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        3,
+        -13.5,
+        0
+      ],
+      "translation": [
+        1.5,
+        0.5,
+        0
+      ],
+      "scale": [
+        -0.2,
+        0.2,
+        -0.2
+      ]
+    },
+    "ground": {
+      "scale": [
+        -0.3,
+        0.3,
+        -0.3
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        -20,
+        0
+      ],
+      "translation": [
+        0.25,
+        -7.5,
+        0
+      ],
+      "scale": [
+        -0.35,
+        0.35,
+        -0.35
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        180,
+        -180,
+        180
+      ],
+      "translation": [
+        -0.25,
+        -6.5,
+        0
+      ],
+      "scale": [
+        -0.3,
+        0.3,
+        -0.3
+      ]
+    }
+  }
+}

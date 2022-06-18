@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "enhancedcraft:end_stick"
+    },
+    "X": {
+      "item": "enhancedcraft:endzite_crystal"
+    }
+  },
+  "result": {
+    "item": "enhancedcraft:endzite_sword"
+  }
+}
