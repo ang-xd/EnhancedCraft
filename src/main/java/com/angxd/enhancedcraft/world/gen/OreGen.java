@@ -15,9 +15,15 @@ public class OreGen {
                 event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
         base.add(PlacedFeatures.TITANIUM_ORE_PLACED);
+        base.add(PlacedFeatures.ORE_ICE_UPPER_PLACED);
+        base.add(PlacedFeatures.ORE_ICE_LOWER_PLACED);
 
         if(event.getCategory() == Biome.BiomeCategory.THEEND) {
             base.add(PlacedFeatures.ENDZITE_ORE_PLACED);
+        }
+
+        if(event.getCategory() == Biome.BiomeCategory.NETHER) {
+            base.add(PlacedFeatures.FIREITE_ORE_PLACED);
         }
     }
 }

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "enhancedcraft:block/sleeping_bag" },
+    "facing=east": { "model": "enhancedcraft:block/sleeping_bag", "y": 90 },
+    "facing=south": { "model": "enhancedcraft:block/sleeping_bag", "y": 180 },
+    "facing=west": { "model": "enhancedcraft:block/sleeping_bag", "y": 270 }
+  }
+}

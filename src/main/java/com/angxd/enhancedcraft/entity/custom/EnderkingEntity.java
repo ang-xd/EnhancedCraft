@@ -1,13 +1,18 @@
 package com.angxd.enhancedcraft.entity.custom;
 
+import com.angxd.enhancedcraft.EnhancedCraft;
+import com.angxd.enhancedcraft.item.ModdedItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -15,10 +20,13 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.monster.Endermite;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
@@ -36,6 +44,7 @@ import java.util.function.Predicate;
 public class EnderkingEntity extends Monster implements IAnimatable {
 
     private AnimationFactory factory = new AnimationFactory(this);
+   /// public static final ResourceLocation loot = new ResourceLocation(EnhancedCraft.MOD_ID, "loot_tables/entities/enderking");
 
     public EnderkingEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
@@ -56,6 +65,18 @@ public class EnderkingEntity extends Monster implements IAnimatable {
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, true, true));
         this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+    }
+
+    protected void dropCustomDeathLoot(DamageSource pSource, int pLooting, boolean pRecentlyHit) {
+        super.dropCustomDeathLoot(pSource, pLooting, pRecentlyHit);
+        Entity entity = pSource.getEntity();
+        ItemStack stack = new ItemStack(ModdedItems.END_STICK.get(), 1);
+
+        this.spawnAtLocation(stack);
+
+        level.explode(
+                this, this.position().x, this.position().y, this.position().z, 1, Explosion.BlockInteraction.NONE
+        );
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {

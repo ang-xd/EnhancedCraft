@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "enhancedcraft:fireite_block"
+    }
+  ],
+  "result": {
+    "item": "enhancedcraft:fireite",
+    "count": 9
+  }
+}

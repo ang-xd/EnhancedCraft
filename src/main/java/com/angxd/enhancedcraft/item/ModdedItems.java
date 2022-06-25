@@ -4,6 +4,8 @@ import com.angxd.enhancedcraft.EnhancedCraft;
 import com.angxd.enhancedcraft.ModdedTab;
 import com.angxd.enhancedcraft.block.ModdedBlocks;
 import com.angxd.enhancedcraft.entity.ModdedEntities;
+import com.angxd.enhancedcraft.item.custom.EndziteSword;
+import com.angxd.enhancedcraft.item.custom.FireiteSword;
 import com.angxd.enhancedcraft.item.custom.TitaniumTrapItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -31,6 +33,9 @@ public class ModdedItems {
     public static final RegistryObject<Item> END_STICK = ITEMS.register("end_stick",
             () -> new Item(new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
 
+    public static final RegistryObject<Item> ICE_STICK = ITEMS.register("ice_stick",
+            () -> new Item(new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+
     public static final RegistryObject<Item> DULL_FIREITE = ITEMS.register("dull_fireite",
             () -> new Item(new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
 
@@ -40,6 +45,10 @@ public class ModdedItems {
 
     public static final RegistryObject<Item> ENDERKING_SPAWN_EGG = ITEMS.register("enderking_spawn_egg",
             () -> new ForgeSpawnEggItem(ModdedEntities.ENDERKING,0x111111, 0xFF0000,
+                    new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+
+    public static final RegistryObject<Item> ICE_MONSTER_SPAWN_EGG = ITEMS.register("ice_monster_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModdedEntities.ICE_MONSTER,0x355B75, 0x507BB5,
                     new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
 
 
@@ -59,7 +68,7 @@ public class ModdedItems {
             () -> new ShovelItem(ModdedTiers.TITANIUM, 0.8f, -3.5F, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
 
     public static final RegistryObject<Item> ENDZITE_SWORD = ITEMS.register("endzite_sword",
-            () -> new SwordItem(ModdedTiers.ENDZITE, 5, 3, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+            () -> new EndziteSword(ModdedTiers.ENDZITE, 5, 3, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
 
     public static final RegistryObject<Item> ENDZITE_HOE = ITEMS.register("endzite_hoe",
             () -> new HoeItem(ModdedTiers.ENDZITE, 3, 3, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
@@ -72,6 +81,21 @@ public class ModdedItems {
 
     public static final RegistryObject<Item> ENDZITE_SHOVEL = ITEMS.register("endzite_shovel",
             () -> new ShovelItem(ModdedTiers.ENDZITE, 3, 3, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+
+    public static final RegistryObject<Item> FIREITE_SWORD = ITEMS.register("fireite_sword",
+            () -> new FireiteSword(ModdedTiers.FIREITE, 1, 1, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+
+    public static final RegistryObject<Item> FIREITE_HOE = ITEMS.register("fireite_hoe",
+            () -> new HoeItem(ModdedTiers.FIREITE, 1, 1, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+
+    public static final RegistryObject<Item> FIREITE_PICKAXE = ITEMS.register("fireite_pickaxe",
+            () -> new PickaxeItem(ModdedTiers.FIREITE, 1, 1, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+
+    public static final RegistryObject<Item> FIREITE_AXE = ITEMS.register("fireite_axe",
+            () -> new AxeItem(ModdedTiers.FIREITE, 1, 1, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
+
+    public static final RegistryObject<Item> FIREITE_SHOVEL = ITEMS.register("fireite_shovel",
+            () -> new ShovelItem(ModdedTiers.FIREITE, 1, 1, new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
             () -> new Item(new Item.Properties().tab(ModdedTab.ENHANCEDCRAFT_TAB)));
 

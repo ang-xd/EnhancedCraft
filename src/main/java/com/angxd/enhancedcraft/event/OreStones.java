@@ -32,6 +32,11 @@ public class OreStones {
             "enhancedcraft:endzite_ore"
     );
 
+    public static List<String> netherStones = List.of(
+            "enhancedcraft:fireite_ore"
+    );
+
+
     public static List<String> deepslateOres = List.of(
             Blocks.DEEPSLATE_COAL_ORE.getRegistryName().toString(),
             Blocks.DEEPSLATE_COPPER_ORE.getRegistryName().toString(),
@@ -44,7 +49,6 @@ public class OreStones {
             "enhancedcraft:deepslate_titanium_ore"
     );
 
-    @SubscribeEvent
     public static void onCall(BlockEvent.BreakEvent e)
     {
         Player plr = e.getPlayer();
@@ -65,6 +69,13 @@ public class OreStones {
         {
             e.setCanceled(true);
             world.setBlock(pos, Blocks.END_STONE.defaultBlockState(), 3);
+            block.dropResources(block.defaultBlockState(), (Level)world, pos);
+        }
+
+        if(netherStones.contains(block.getRegistryName().toString()))
+        {
+            e.setCanceled(true);
+            world.setBlock(pos, Blocks.NETHERRACK.defaultBlockState(), 3);
             block.dropResources(block.defaultBlockState(), (Level)world, pos);
         }
 

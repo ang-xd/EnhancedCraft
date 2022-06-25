@@ -3,7 +3,7 @@ package com.angxd.enhancedcraft.event;
 import com.angxd.enhancedcraft.EnhancedCraft;
 import com.angxd.enhancedcraft.entity.ModdedEntities;
 import com.angxd.enhancedcraft.entity.custom.EnderkingEntity;
-import com.angxd.enhancedcraft.event.loot.EndStickFromEnderman;
+import com.angxd.enhancedcraft.entity.custom.IceMonster;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
@@ -18,14 +18,12 @@ public class EventBusEvents {
     @SubscribeEvent
     public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>>
                                                            event) {
-        event.getRegistry().registerAll(
-                new EndStickFromEnderman.Serializer().setRegistryName
-                        (new ResourceLocation(EnhancedCraft.MOD_ID,"end_stick_from_enderman"))
-        );
+
     }
 
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModdedEntities.ENDERKING.get(), EnderkingEntity.setAttributes());
+        event.put(ModdedEntities.ICE_MONSTER.get(), IceMonster.setAttributes());
     }
 }

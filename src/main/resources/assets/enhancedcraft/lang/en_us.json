@@ -1,7 +1,8 @@
 {
-  "item.enhancedcraft.chocolate_bar": "Chocolate Bar",
-  "item.enhancedcraft.burger": "Burger",
-  "item.enhancedcraft.hotdog": "Hotdog",
+  "block.enhancedcraft.sleeping_bag": "Sleeping Bag",
+  "block.enhancedcraft.cherry_leaves": "Cherry Leaves",
+  "block.enhancedcraft.cherry_sapling": "Cherry Blossom Sapling",
+  "block.enhancedcraft.cherry_log": "Cherry Blossom Log",
 
   "block.enhancedcraft.titanium_trap": "Titanium Trap",
 
@@ -17,27 +18,42 @@
   "item.enhancedcraft.endzite_axe": "Endzite Axe",
   "item.enhancedcraft.endzite_hoe": "Endzite Hoe",
 
+  "item.enhancedcraft.fireite_sword": "Fireite Sword",
+  "item.enhancedcraft.fireite_pickaxe": "Fireite Pickaxe",
+  "item.enhancedcraft.fireite_shovel": "Fireite Shovel",
+  "item.enhancedcraft.fireite_axe": "Fireite Axe",
+  "item.enhancedcraft.fireite_hoe": "Fireite Hoe",
+
   "block.enhancedcraft.endzite_ore": "Endzite Ore",
-  "block.enhancedcraft.endzite_block": "Endzite Block",
+  "block.enhancedcraft.endzite_block": "Block of Endzite",
   "item.enhancedcraft.endzite_shard": "Endzite Shard",
   "item.enhancedcraft.endzite_crystal": "Endzite Crystal",
   "item.enhancedcraft.end_stick": "End Stick",
 
+  "block.enhancedcraft.cracked_ice": "Cracked Ice",
   "block.enhancedcraft.fireite_ore": "Fireite Ore",
+  "block.enhancedcraft.fireite_block": "Block of Fireite",
   "item.enhancedcraft.dull_fireite": "Dull Fireite",
   "item.enhancedcraft.fireite": "Fireite",
+
+  "item.enhancedcraft.ice_stick": "Ice Stick",
+  "block.enhancedcraft.iceite_ore": "Iceite Ore",
+  "effect.enhancedcraft.freeze": "Freeze",
 
   "entity.enhancedcraft.enderking": "Enderking",
   "item.enhancedcraft.enderking_spawn_egg": "Enderking Spawn Egg",
 
+  "entity.enhancedcraft.ice_monster": "Ice Monster",
+  "item.enhancedcraft.ice_monster_spawn_egg": "Ice Monster Spawn Egg",
+
   "item.enhancedcraft.raw_titanium": "Raw Titanium",
   "item.enhancedcraft.titanium_ingot": "Titanium Ingot",
   "block.enhancedcraft.titanium_ore": "Titanium Ore",
-  "block.enhancedcraft.titanium_block": "Titanium Block",
+  "block.enhancedcraft.titanium_block": "Block of Titanium",
   "block.enhancedcraft.raw_titanium_block": "Block of Raw Titanium",
   "block.enhancedcraft.deepslate_titanium_ore": "Deepslate Titanium Ore",
 
-  "sounds.enhancedcraft.titanium_trap_kill": "Titanium Trap Kill Sound",
+  "sounds.titanium_trap_kill": "Titanium Trap Kill",
 
   "itemGroup.enhancedcraft_tab": "Enhanced Craft"
 }
