@@ -1,0 +1,65 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "sleeping_bag",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "enhancedcraft:block/sleeping_bag",
+		"particle": "enhancedcraft:block/sleeping_bag"
+	},
+	"elements": [
+		{
+			"name": "bed",
+			"from": [0, 0, 0],
+			"to": [16, 1.12, 32],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.56, 8]},
+			"faces": {
+				"north": {"uv": [8, 0.5, 12, 0.625], "texture": "#0"},
+				"east": {"uv": [0, 8, 8, 8.125], "texture": "#0"},
+				"south": {"uv": [8, 1, 12, 1.125], "texture": "#0"},
+				"west": {"uv": [8, 0, 16, 0.125], "texture": "#0"},
+				"up": {"uv": [4, 8, 0, 0], "texture": "#0"},
+				"down": {"uv": [8, 0, 4, 8], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 0, -4],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 0, -3.25],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"firstperson_righthand": {
+			"translation": [-1, 5.25, 0],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"firstperson_lefthand": {
+			"translation": [-0.75, 4.25, 0],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"ground": {
+			"translation": [0, 15.75, 0],
+			"scale": [2, 2, 2]
+		},
+		"gui": {
+			"rotation": [90, -180, 0],
+			"translation": [0, -3, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, -2.5, -8.25],
+			"scale": [0.4, 0.4, 0.4]
+		}
+	},
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}
