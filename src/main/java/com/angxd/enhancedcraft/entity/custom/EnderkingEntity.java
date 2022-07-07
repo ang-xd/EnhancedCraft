@@ -92,7 +92,7 @@ public class EnderkingEntity extends Monster implements IAnimatable {
     @Override
     public void registerControllers(AnimationData data) {
         data.addAnimationController(new AnimationController(this, "controller",
-                0, this::predicate));
+                3, this::predicate));
     }
 
     @Override

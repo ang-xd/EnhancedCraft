@@ -10,7 +10,12 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 public class PlacedFeatures {
     public static final Holder<PlacedFeature> TITANIUM_ORE_PLACED = PlacementUtils.register("titanium_ore_placed",
-                ConfiguredFeatures.TITANIUM_ORE, OrePlacement.commonOrePlacement(16, HeightRangePlacement.triangle(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80))));
+                ConfiguredFeatures.TITANIUM_ORE, OrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-45), VerticalAnchor.absolute(80))));
+    public static final Holder<PlacedFeature> URANIUM_ORE_PLACED = PlacementUtils.register("uranium_ore_placed",
+            ConfiguredFeatures.URANIUM_ORE, OrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(30))));
+
+    public static final Holder<PlacedFeature> FROZENITE_ORE_PLACED = PlacementUtils.register("iceite_ore_placed",
+            ConfiguredFeatures.FROZENITE_ORE, OrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(45))));
 
     public static final Holder<PlacedFeature> CHERRY_PLACED = PlacementUtils.register("cherry_placed",
             ConfiguredFeatures.CHERRY_SPAWN, VegetationPlacements.treePlacement(

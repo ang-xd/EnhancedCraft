@@ -15,6 +15,8 @@ public class OreGen {
                 event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
         base.add(PlacedFeatures.TITANIUM_ORE_PLACED);
+        base.add(PlacedFeatures.URANIUM_ORE_PLACED);
+        base.add(PlacedFeatures.FROZENITE_ORE_PLACED);
         base.add(PlacedFeatures.ORE_ICE_UPPER_PLACED);
         base.add(PlacedFeatures.ORE_ICE_LOWER_PLACED);
 

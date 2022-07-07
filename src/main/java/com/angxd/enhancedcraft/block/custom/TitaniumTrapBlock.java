@@ -1,7 +1,7 @@
 package com.angxd.enhancedcraft.block.custom;
 
-import com.angxd.enhancedcraft.item.entity.ModdedBlockEntities;
-import com.angxd.enhancedcraft.item.entity.custom.TitaniumTrapEntity;
+import com.angxd.enhancedcraft.block.entity.ModdedBlockEntities;
+import com.angxd.enhancedcraft.block.entity.custom.TitaniumTrapEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;

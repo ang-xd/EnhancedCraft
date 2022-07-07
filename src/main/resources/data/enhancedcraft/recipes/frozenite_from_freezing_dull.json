@@ -1,0 +1,11 @@
+{
+  "type": "enhancedcraft:freeze",
+  "ingredients": [
+    {
+      "item": "enhancedcraft:dull_frozenite"
+    }
+  ],
+  "output": {
+    "item": "enhancedcraft:frozenite"
+  }
+}

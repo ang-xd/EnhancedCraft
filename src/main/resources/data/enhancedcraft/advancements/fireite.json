@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "enhancedcraft:fireite"
+    },
+    "title": "Fireite",
+    "description": "Try not to burn yourself!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "enhancedcraft:frozenite",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhancedcraft:fireite"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

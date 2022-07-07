@@ -29,9 +29,17 @@ public class ConfiguredFeatures {
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModdedBlocks.TITANIUM_ORE.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModdedBlocks.DEEPSLATE_TITANIUM_ORE.get().defaultBlockState()));
 
+    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_URANIUM_ORES = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModdedBlocks.URANIUM_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModdedBlocks.DEEPSLATE_URANIUM_ORE.get().defaultBlockState()));
+
+    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_FROZENITE_ORES = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModdedBlocks.ICEITE_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModdedBlocks.DEEPSLATE_ICEITE_ORE.get().defaultBlockState()));
+
     public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> CHERRY_TREE =
             FeatureUtils.register("cherry", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                    BlockStateProvider.simple(ModdedBlocks.CHERRY_LOG.get()),
+                    BlockStateProvider.simple(Blocks.BIRCH_LOG),
                     new StraightTrunkPlacer(5, 6, 3),
                     BlockStateProvider.simple(ModdedBlocks.CHERRY_LEAVES.get()),
                     new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
@@ -58,10 +66,16 @@ public class ConfiguredFeatures {
             Feature.ORE, new OreConfiguration(ENDZITE_ORES, 3));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> FIREITE_ORE = FeatureUtils.register("fireite_ore",
-            Feature.ORE, new OreConfiguration(NETHER_FIREITE_ORES, 9));
+            Feature.ORE, new OreConfiguration(NETHER_FIREITE_ORES, 6));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ICE_ORE = FeatureUtils.register("ice_ore",
             Feature.ORE, new OreConfiguration(OVERWORLD_ICE, 32));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TITANIUM_ORE = FeatureUtils.register("titanium_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 20, 0.7F));
+            Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 11));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> URANIUM_ORE = FeatureUtils.register("uranium_ore",
+            Feature.ORE, new OreConfiguration(OVERWORLD_URANIUM_ORES, 5));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> FROZENITE_ORE = FeatureUtils.register("iceite_ore",
+            Feature.ORE, new OreConfiguration(OVERWORLD_FROZENITE_ORES, 8));
 }

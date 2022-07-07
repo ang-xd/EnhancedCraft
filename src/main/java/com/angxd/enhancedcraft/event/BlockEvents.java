@@ -11,6 +11,5 @@ public class BlockEvents {
     public static void onBlockBreak(BlockEvent.BreakEvent e)
     {
         OreStones.onCall(e);
-        MiscEvents.onBlockBreak(e);
     }
 }

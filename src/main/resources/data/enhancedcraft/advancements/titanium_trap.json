@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "enhancedcraft:titanium_trap"
+    },
+    "title": "Titanium Trap",
+    "description": "Zap zap zap!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "enhancedcraft:titanium",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "blocks": [
+          {
+            "blocks": [
+              "enhancedcraft:titanium_trap"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "enhancedcraft:frozenite"
+    },
+    "title": "Frozenite",
+    "description": "Is it just me or is it cold in here?",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "enhancedcraft:titanium",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhancedcraft:frozenite"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

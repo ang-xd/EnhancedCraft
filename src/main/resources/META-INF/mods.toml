@@ -1,16 +1,15 @@
 modLoader="javafml"
 loaderVersion="[39,)"
 license="MIT"
+logoFile="enhancedcraft.png"
 
 [[mods]]
     modId="enhancedcraft"
     version="${file.jarVersion}"
     displayName="Enhanced Craft"
-    authors="Angxd"
-    description='''
-    -- Minecraft expansion mod --
-    New biomes, ores, armor, weapons, and much more!
-    '''
+    credits="angxd, Iceattack"
+    authors="angxd"
+    description="Enhance your Minecraft experience with many new ores, mobs, biomes, and items, blocks!"
 
 [[dependencies.enhancedcraft]]
     modId="forge"

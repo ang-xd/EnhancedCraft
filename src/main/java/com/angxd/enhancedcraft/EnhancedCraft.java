@@ -3,15 +3,25 @@ package com.angxd.enhancedcraft;
 import com.angxd.enhancedcraft.biome.ModdedRegion;
 import com.angxd.enhancedcraft.biome.ModdedRules;
 import com.angxd.enhancedcraft.block.ModdedBlocks;
+import com.angxd.enhancedcraft.block.entity.client.renderer.UraniumTNTRenderer;
+import com.angxd.enhancedcraft.block.entity.custom.PrimedUraniumTNT;
 import com.angxd.enhancedcraft.effect.ModdedEffects;
 import com.angxd.enhancedcraft.entity.ModdedEntities;
+import com.angxd.enhancedcraft.entity.client.renderer.DriderRenderer;
 import com.angxd.enhancedcraft.entity.client.renderer.EnderkingRenderer;
-import com.angxd.enhancedcraft.entity.client.renderer.IceMonsterRenderer;
-import com.angxd.enhancedcraft.item.entity.ModdedBlockEntities;
+import com.angxd.enhancedcraft.block.entity.ModdedBlockEntities;
 import com.angxd.enhancedcraft.item.ModdedItems;
+import com.angxd.enhancedcraft.recipe.ModdedRecipes;
+import com.angxd.enhancedcraft.screen.FreezerScreen;
+import com.angxd.enhancedcraft.screen.ModdedMenuTypes;
 import com.angxd.enhancedcraft.sound.ModdedSounds;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -42,10 +52,12 @@ public class EnhancedCraft
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register new content
+        ModdedRecipes.register(modEventBus);
+        ModdedSounds.register(modEventBus);
         ModdedItems.register(modEventBus);
         ModdedBlocks.register(modEventBus);
         ModdedBlockEntities.register(modEventBus);
-        ModdedSounds.register(modEventBus);
+        ModdedMenuTypes.register(modEventBus);
         ModdedEffects.register(modEventBus);
         ModdedEntities.register(modEventBus);
         
@@ -60,17 +72,20 @@ public class EnhancedCraft
     private void clientInit(final FMLClientSetupEvent event)
     {
         ItemBlockRenderTypes.setRenderLayer(ModdedBlocks.TITANIUM_TRAP.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModdedBlocks.SLEEPING_BAG.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModdedBlocks.CHERRY_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModdedBlocks.CHERRY_SAPLING.get(), RenderType.cutout());
         EntityRenderers.register(ModdedEntities.ENDERKING.get(), EnderkingRenderer::new);
-        EntityRenderers.register(ModdedEntities.ICE_MONSTER.get(), IceMonsterRenderer::new);
+        EntityRenderers.register(ModdedEntities.DRIDER.get(), DriderRenderer::new);
+        MenuScreens.register(ModdedMenuTypes.FREEZER_MENU.get(), FreezerScreen::new);
+
+
+        EntityRenderDispatcher renderManager = Minecraft.getInstance().getEntityRenderDispatcher();
     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
-            Regions.register(new ModdedRegion(new ResourceLocation(MOD_ID, "overworld"), 6));
+            Regions.register(new ModdedRegion(new ResourceLocation(MOD_ID, "overworld"), 10));
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModdedRules.makeRules());
 
             SpawnPlacements.register(ModdedEntities.ENDERKING.get(),

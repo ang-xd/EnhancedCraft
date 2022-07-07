@@ -15,13 +15,15 @@ public class ModdedBiomes {
     @SubscribeEvent
     public static void registerBiomes(RegistryEvent.Register<Biome> event) {
         IForgeRegistry<Biome> reg = event.getRegistry();
+        reg.register(ModdedOverworldBiomes.impure_caves().setRegistryName(ModdedBiomes.IMPURE_CAVES.location()));
         reg.register(ModdedOverworldBiomes.cherry_blossom_forest().setRegistryName(ModdedBiomes.CHERRY_BLOSSOM_FOREST.location()));
     }
 
     public static final ResourceKey<Biome> CHERRY_BLOSSOM_FOREST = register("cherry_blossom_forest");
+    public static final ResourceKey<Biome> IMPURE_CAVES = register("impure_caves");
 
     private static ResourceKey<Biome> register(String name)
     {
-        return ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation(EnhancedCraft   .MOD_ID, name));
+        return ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation(EnhancedCraft.MOD_ID, name));
     }
 }

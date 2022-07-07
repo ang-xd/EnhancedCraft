@@ -1,5 +1,6 @@
 {
-  "block.enhancedcraft.sleeping_bag": "Sleeping Bag",
+
+  "block.enhancedcraft.freezer": "Freezer",
   "block.enhancedcraft.cherry_leaves": "Cherry Leaves",
   "block.enhancedcraft.cherry_sapling": "Cherry Blossom Sapling",
   "block.enhancedcraft.cherry_log": "Cherry Blossom Log",
@@ -26,25 +27,42 @@
 
   "block.enhancedcraft.endzite_ore": "Endzite Ore",
   "block.enhancedcraft.endzite_block": "Block of Endzite",
-  "item.enhancedcraft.endzite_shard": "Endzite Shard",
-  "item.enhancedcraft.endzite_crystal": "Endzite Crystal",
+  "item.enhancedcraft.endzite_scrap": "Endzite Scrap",
+  "item.enhancedcraft.endzite_ingot": "Endzite Ingot",
   "item.enhancedcraft.end_stick": "End Stick",
 
-  "block.enhancedcraft.cracked_ice": "Cracked Ice",
+  "block.enhancedcraft.ingot_reproducer": "Ingot Reproducer",
+
   "block.enhancedcraft.fireite_ore": "Fireite Ore",
   "block.enhancedcraft.fireite_block": "Block of Fireite",
   "item.enhancedcraft.dull_fireite": "Dull Fireite",
   "item.enhancedcraft.fireite": "Fireite",
 
   "item.enhancedcraft.ice_stick": "Ice Stick",
-  "block.enhancedcraft.iceite_ore": "Iceite Ore",
+  "block.enhancedcraft.iceite_ore": "Frozenite Ore",
+  "block.enhancedcraft.deepslate_iceite_ore": "Deepslate Frozenite Ore",
+  "item.enhancedcraft.frozenite": "Frozenite",
+  "item.enhancedcraft.dull_frozenite": "Dull Frozenite",
   "effect.enhancedcraft.freeze": "Freeze",
+  "item.enhancedcraft.frozenite_sword": "Frozenite Sword",
+  "item.enhancedcraft.frozenite_pickaxe": "Frozenite Pickaxe",
+  "item.enhancedcraft.frozenite_shovel": "Frozenite Shovel",
+  "item.enhancedcraft.frozenite_axe": "Frozenite Axe",
+  "item.enhancedcraft.frozenite_hoe": "Frozenite Hoe",
+
+  "item.enhancedcraft.uranium_bar": "Uranium Bar",
+  "block.enhancedcraft.uranium_ore": "Uranium Ore",
+  "block.enhancedcraft.deepslate_uranium_ore": "Deepslate Uranium Ore",
+  "block.enhancedcraft.uranium_tnt": "Uranium TNT",
 
   "entity.enhancedcraft.enderking": "Enderking",
   "item.enhancedcraft.enderking_spawn_egg": "Enderking Spawn Egg",
 
   "entity.enhancedcraft.ice_monster": "Ice Monster",
   "item.enhancedcraft.ice_monster_spawn_egg": "Ice Monster Spawn Egg",
+
+  "entity.enhancedcraft.drider": "Drider",
+  "item.enhancedcraft.drider_spawn_egg": "Drider Spawn Egg",
 
   "item.enhancedcraft.raw_titanium": "Raw Titanium",
   "item.enhancedcraft.titanium_ingot": "Titanium Ingot",
@@ -53,7 +71,12 @@
   "block.enhancedcraft.raw_titanium_block": "Block of Raw Titanium",
   "block.enhancedcraft.deepslate_titanium_ore": "Deepslate Titanium Ore",
 
-  "sounds.titanium_trap_kill": "Titanium Trap Kill",
+  "sounds.zap": "Zap",
+  "sounds.drider_screech": "Drider screech",
+  "sounds.drider_breath": "Drider breathes",
+  "sounds.drider_death": "Drider dies",
+
+  "item.enhancedcraft.iron_golem_spawn_egg": "Iron Golem Spawn Egg",
 
   "itemGroup.enhancedcraft_tab": "Enhanced Craft"
 }

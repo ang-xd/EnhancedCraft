@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "enhancedcraft:ice_stick"
+    },
+    "X": {
+      "item": "enhancedcraft:frozenite"
+    }
+  },
+  "result": {
+    "item": "enhancedcraft:frozenite_hoe"
+  }
+}

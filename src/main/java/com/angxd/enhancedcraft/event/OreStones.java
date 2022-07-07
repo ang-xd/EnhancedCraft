@@ -25,7 +25,8 @@ public class OreStones {
             Blocks.LAPIS_ORE.getRegistryName().toString(),
             Blocks.REDSTONE_ORE.getRegistryName().toString(),
             Blocks.EMERALD_ORE.getRegistryName().toString(),
-            "enhancedcraft:titanium_ore"
+            "enhancedcraft:titanium_ore",
+            "enhancedcraft:iceite_ore"
     );
 
     public static List<String> endStones = List.of(
@@ -33,7 +34,9 @@ public class OreStones {
     );
 
     public static List<String> netherStones = List.of(
-            "enhancedcraft:fireite_ore"
+            "enhancedcraft:fireite_ore",
+            Blocks.NETHER_GOLD_ORE.getRegistryName().toString(),
+            Blocks.NETHER_QUARTZ_ORE.getRegistryName().toString()
     );
 
 
@@ -46,7 +49,8 @@ public class OreStones {
             Blocks.DEEPSLATE_LAPIS_ORE.getRegistryName().toString(),
             Blocks.DEEPSLATE_REDSTONE_ORE.getRegistryName().toString(),
             Blocks.DEEPSLATE_EMERALD_ORE.getRegistryName().toString(),
-            "enhancedcraft:deepslate_titanium_ore"
+            "enhancedcraft:deepslate_titanium_ore",
+            "enhancedcraft:deepslate_iceite_ore"
     );
 
     public static void onCall(BlockEvent.BreakEvent e)

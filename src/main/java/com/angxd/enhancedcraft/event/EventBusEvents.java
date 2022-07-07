@@ -2,9 +2,12 @@ package com.angxd.enhancedcraft.event;
 
 import com.angxd.enhancedcraft.EnhancedCraft;
 import com.angxd.enhancedcraft.entity.ModdedEntities;
+import com.angxd.enhancedcraft.entity.custom.DriderEntity;
 import com.angxd.enhancedcraft.entity.custom.EnderkingEntity;
-import com.angxd.enhancedcraft.entity.custom.IceMonster;
+import com.angxd.enhancedcraft.recipe.FreezerRecipe;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -24,6 +27,11 @@ public class EventBusEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModdedEntities.ENDERKING.get(), EnderkingEntity.setAttributes());
-        event.put(ModdedEntities.ICE_MONSTER.get(), IceMonster.setAttributes());
+        event.put(ModdedEntities.DRIDER.get(), DriderEntity.setAttributes());
+    }
+
+    @SubscribeEvent
+    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
+        Registry.register(Registry.RECIPE_TYPE, FreezerRecipe.Type.ID, FreezerRecipe.Type.INSTANCE);
     }
 }

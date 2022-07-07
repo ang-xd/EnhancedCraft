@@ -1,8 +1,26 @@
 {
-  "titanium_trap_kill": {
-    "subtitle": "sounds.titanium_trap_kill",
+  "zap": {
+    "subtitle": "sounds.zap",
     "sounds": [
-        "enhancedcraft:titanium_trap_kill"
+        "enhancedcraft:zap"
+    ]
+  },
+  "drider_death": {
+    "subtitle": "sounds.drider_death",
+    "sounds": [
+      "enhancedcraft:drider_death"
+    ]
+  },
+  "drider_screech": {
+    "subtitle": "sounds.drider_screech",
+    "sounds": [
+      "enhancedcraft:drider_screech"
+    ]
+  },
+  "drider_breath": {
+    "subtitle": "sounds.drider_breath",
+    "sounds": [
+      "enhancedcraft:drider_breath"
     ]
   }
 }

@@ -1,0 +1,11 @@
+{
+  "type": "enhancedcraft:freeze",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "output": {
+    "item": "enhancedcraft:ice_stick"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "enhancedcraft:titanium_ingot"
+    },
+    "title": "Titanium",
+    "description": "Oh! Shiny!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "enhancedcraft:enhancedcraft",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enhancedcraft:titanium_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DTD",
+    "ETE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "enhancedcraft:endzite_scrap"
+    },
+    "T": {
+      "item": "enhancedcraft:titanium_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "enhancedcraft:endzite_ingot"
+  }
+}
