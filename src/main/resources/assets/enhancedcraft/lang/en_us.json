@@ -78,5 +78,44 @@
 
   "item.enhancedcraft.iron_golem_spawn_egg": "Iron Golem Spawn Egg",
 
-  "itemGroup.enhancedcraft_tab": "Enhanced Craft"
+  "block.enhancedcraft.fake_stone": "Fake Stone",
+
+  "item.enhancedcraft.golden_potato": "Golden Potato",
+  "item.enhancedcraft.golden_bread": "Golden Bread",
+  "item.enhancedcraft.golden_chicken": "Golden Chicken",
+  "item.enhancedcraft.golden_cookie": "Golden Cookie",
+  "item.enhancedcraft.golden_porkchop": "Golden Porkchop",
+  "item.enhancedcraft.golden_steak": "Golden Steak",
+
+  "item.enhancedcraft.titanium_helmet": "Titanium Helmet",
+  "item.enhancedcraft.titanium_chestplate": "Titanium Chestplate",
+  "item.enhancedcraft.titanium_leggings": "Titanium Leggings",
+  "item.enhancedcraft.titanium_boots": "Titanium Boots",
+
+  "item.enhancedcraft.endzite_helmet": "Endzite Helmet",
+  "item.enhancedcraft.endzite_chestplate": "Endzite Chestplate",
+  "item.enhancedcraft.endzite_leggings": "Endzite Leggings",
+  "item.enhancedcraft.endzite_boots": "Endzite Boots",
+
+  "item.enhancedcraft.fireite_helmet": "Fireite Helmet",
+  "item.enhancedcraft.fireite_chestplate": "Fireite Chestplate",
+  "item.enhancedcraft.fireite_leggings": "Fireite Leggings",
+  "item.enhancedcraft.fireite_boots": "Fireite Boots",
+
+  "item.enhancedcraft.frozenite_helmet": "Frozenite Helmet",
+  "item.enhancedcraft.frozenite_chestplate": "Frozenite Chestplate",
+  "item.enhancedcraft.frozenite_leggings": "Frozenite Leggings",
+  "item.enhancedcraft.frozenite_boots": "Frozenite Boots",
+
+  "key.enhancedcraft.fly": "Endzite Levitate",
+
+  "block.enhancedcraft.amber_ore": "Amber Ore",
+  "block.enhancedcraft.amber_block": "Amber Block",
+  "block.enhancedcraft.deepslate_amber_ore": "Deepslate Amber Ore",
+  "item.enhancedcraft.amber": "Amber",
+
+  "itemGroup.enhancedcraft_tab": "Enhanced Craft Misc",
+  "itemGroup.enhancedcraft_tools_tab": "Enhanced Craft Equipment",
+  "itemGroup.enhancedcraft_ores_tab": "Enhanced Craft Ores",
+  "key.enchancedcraft.items": "Enhanced Craft Keybinds"
 }

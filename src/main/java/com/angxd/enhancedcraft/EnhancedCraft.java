@@ -11,6 +11,7 @@ import com.angxd.enhancedcraft.entity.client.renderer.DriderRenderer;
 import com.angxd.enhancedcraft.entity.client.renderer.EnderkingRenderer;
 import com.angxd.enhancedcraft.block.entity.ModdedBlockEntities;
 import com.angxd.enhancedcraft.item.ModdedItems;
+import com.angxd.enhancedcraft.keybinds.ModdedKeybinds;
 import com.angxd.enhancedcraft.recipe.ModdedRecipes;
 import com.angxd.enhancedcraft.screen.FreezerScreen;
 import com.angxd.enhancedcraft.screen.ModdedMenuTypes;
@@ -62,14 +63,14 @@ public class EnhancedCraft
         ModdedEntities.register(modEventBus);
         
         modEventBus.addListener(this::setup);
-        modEventBus.addListener(this::clientInit);
+        modEventBus.addListener(this::clientSetup);
 
         GeckoLib.initialize();
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void clientInit(final FMLClientSetupEvent event)
+    private void clientSetup(final FMLClientSetupEvent event)
     {
         ItemBlockRenderTypes.setRenderLayer(ModdedBlocks.TITANIUM_TRAP.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModdedBlocks.CHERRY_LEAVES.get(), RenderType.cutout());
@@ -77,9 +78,6 @@ public class EnhancedCraft
         EntityRenderers.register(ModdedEntities.ENDERKING.get(), EnderkingRenderer::new);
         EntityRenderers.register(ModdedEntities.DRIDER.get(), DriderRenderer::new);
         MenuScreens.register(ModdedMenuTypes.FREEZER_MENU.get(), FreezerScreen::new);
-
-
-        EntityRenderDispatcher renderManager = Minecraft.getInstance().getEntityRenderDispatcher();
     }
 
     private void setup(final FMLCommonSetupEvent event)

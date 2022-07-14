@@ -72,10 +72,10 @@ public class DriderEntity extends Monster implements IAnimatable {
 
     public static AttributeSupplier setAttributes() {
         return Monster.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 220)
+                .add(Attributes.MAX_HEALTH, 200)
                 .add(Attributes.MOVEMENT_SPEED, (double)0.2f)
-                .add(Attributes.ATTACK_DAMAGE, 10D)
-                .add(Attributes.FOLLOW_RANGE, 30D).build();
+                .add(Attributes.ATTACK_DAMAGE, 12D)
+                .add(Attributes.FOLLOW_RANGE, 20D).build();
     }
 
 
@@ -158,7 +158,6 @@ public class DriderEntity extends Monster implements IAnimatable {
         this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
     }
 
-
     @Override
     protected void defineSynchedData() {
         super.defineSynchedData();
@@ -168,7 +167,7 @@ public class DriderEntity extends Monster implements IAnimatable {
     public void setRoaring(boolean value) {
         this.ROARING = value;
         if(this.ROARING == true) {
-            playSound(ModdedSounds.DRIDER_SCREECH.get(), 5, 0);
+            playSound(ModdedSounds.DRIDER_SCREECH.get(), 1.5F, 0);
         }
     }
 

@@ -6,7 +6,6 @@ import com.angxd.enhancedcraft.entity.custom.DriderEntity;
 import com.angxd.enhancedcraft.entity.custom.EnderkingEntity;
 import com.angxd.enhancedcraft.recipe.FreezerRecipe;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
@@ -18,12 +17,6 @@ import javax.annotation.Nonnull;
 
 @Mod.EventBusSubscriber(modid = EnhancedCraft.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class EventBusEvents {
-    @SubscribeEvent
-    public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>>
-                                                           event) {
-
-    }
-
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModdedEntities.ENDERKING.get(), EnderkingEntity.setAttributes());

@@ -29,6 +29,10 @@ public class ConfiguredFeatures {
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModdedBlocks.TITANIUM_ORE.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModdedBlocks.DEEPSLATE_TITANIUM_ORE.get().defaultBlockState()));
 
+    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_AMBER_ORES = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModdedBlocks.AMBER_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModdedBlocks.DEEPSLATE_AMBER_ORE.get().defaultBlockState()));
+
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_URANIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModdedBlocks.URANIUM_ORE.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModdedBlocks.DEEPSLATE_URANIUM_ORE.get().defaultBlockState()));
@@ -63,15 +67,18 @@ public class ConfiguredFeatures {
             OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModdedBlocks.FIREITE_ORE.get().defaultBlockState()));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ENDZITE_ORE = FeatureUtils.register("endzite_ore",
-            Feature.ORE, new OreConfiguration(ENDZITE_ORES, 3));
+            Feature.ORE, new OreConfiguration(ENDZITE_ORES, 4));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> FIREITE_ORE = FeatureUtils.register("fireite_ore",
-            Feature.ORE, new OreConfiguration(NETHER_FIREITE_ORES, 6));
+            Feature.ORE, new OreConfiguration(NETHER_FIREITE_ORES, 4));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ICE_ORE = FeatureUtils.register("ice_ore",
             Feature.ORE, new OreConfiguration(OVERWORLD_ICE, 32));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> TITANIUM_ORE = FeatureUtils.register("titanium_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 11));
+            Feature.ORE, new OreConfiguration(OVERWORLD_TITANIUM_ORES, 9));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> AMBER_ORE = FeatureUtils.register("amber_ore",
+            Feature.ORE, new OreConfiguration(OVERWORLD_AMBER_ORES, 11));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> URANIUM_ORE = FeatureUtils.register("uranium_ore",
             Feature.ORE, new OreConfiguration(OVERWORLD_URANIUM_ORES, 5));

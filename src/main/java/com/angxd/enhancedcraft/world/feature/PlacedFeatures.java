@@ -10,7 +10,11 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 public class PlacedFeatures {
     public static final Holder<PlacedFeature> TITANIUM_ORE_PLACED = PlacementUtils.register("titanium_ore_placed",
-                ConfiguredFeatures.TITANIUM_ORE, OrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-45), VerticalAnchor.absolute(80))));
+                ConfiguredFeatures.TITANIUM_ORE, OrePlacement.commonOrePlacement(9, HeightRangePlacement.triangle(VerticalAnchor.absolute(-45), VerticalAnchor.absolute(70))));
+
+    public static final Holder<PlacedFeature> AMBER_ORE_PLACED = PlacementUtils.register("amber_ore_placed",
+            ConfiguredFeatures.AMBER_ORE, OrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(80))));
+
     public static final Holder<PlacedFeature> URANIUM_ORE_PLACED = PlacementUtils.register("uranium_ore_placed",
             ConfiguredFeatures.URANIUM_ORE, OrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(30))));
 
@@ -29,7 +33,7 @@ public class PlacedFeatures {
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60))));
 
     public static final Holder<PlacedFeature> ENDZITE_ORE_PLACED = PlacementUtils.register("endzite_ore_placed",
-            ConfiguredFeatures.ENDZITE_ORE, OrePlacement.commonOrePlacement(30, // VeinsPerChunk
+            ConfiguredFeatures.ENDZITE_ORE, OrePlacement.commonOrePlacement(23, // VeinsPerChunk
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-20), VerticalAnchor.aboveBottom(50))));
 
     public static final Holder<PlacedFeature> FIREITE_ORE_PLACED = PlacementUtils.register("fireite_ore_placed",

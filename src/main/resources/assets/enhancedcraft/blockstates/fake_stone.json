@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "enhancedcraft:block/fake_stone" }
+  }
+}

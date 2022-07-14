@@ -7,13 +7,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 
-@Mod.EventBusSubscriber(modid = EnhancedCraft.MOD_ID)
+//@Mod.EventBusSubscriber(modid = EnhancedCraft.MOD_ID)
 public class OreStones {
 
     public static List<String> stoneOres = List.of(
@@ -26,7 +28,9 @@ public class OreStones {
             Blocks.REDSTONE_ORE.getRegistryName().toString(),
             Blocks.EMERALD_ORE.getRegistryName().toString(),
             "enhancedcraft:titanium_ore",
-            "enhancedcraft:iceite_ore"
+            "enhancedcraft:iceite_ore",
+            "enhancedcraft:uranium_ore",
+            "enhancedcraft:amber_ore"
     );
 
     public static List<String> endStones = List.of(
@@ -50,7 +54,9 @@ public class OreStones {
             Blocks.DEEPSLATE_REDSTONE_ORE.getRegistryName().toString(),
             Blocks.DEEPSLATE_EMERALD_ORE.getRegistryName().toString(),
             "enhancedcraft:deepslate_titanium_ore",
-            "enhancedcraft:deepslate_iceite_ore"
+            "enhancedcraft:deepslate_iceite_ore",
+            "enhancedcraft:deepslate_amber_ore",
+            "enhancedcraft:deepslate_uranium_ore"
     );
 
     public static void onCall(BlockEvent.BreakEvent e)
@@ -62,33 +68,27 @@ public class OreStones {
         BlockPos pos = e.getPos();
         LevelAccessor world = e.getWorld();
 
+        BlockState stateToSet = null;
+
         if (stoneOres.contains(block.getRegistryName().toString()))
-        {
-            e.setCanceled(true);
-            world.setBlock(pos, Blocks.STONE.defaultBlockState(), 3);
-            block.dropResources(block.defaultBlockState(), (Level)world, pos);
-        }
+            stateToSet = Blocks.STONE.defaultBlockState();
 
         if(endStones.contains(block.getRegistryName().toString()))
-        {
-            e.setCanceled(true);
-            world.setBlock(pos, Blocks.END_STONE.defaultBlockState(), 3);
-            block.dropResources(block.defaultBlockState(), (Level)world, pos);
-        }
+            stateToSet = Blocks.END_STONE.defaultBlockState();
 
         if(netherStones.contains(block.getRegistryName().toString()))
-        {
-            e.setCanceled(true);
-            world.setBlock(pos, Blocks.NETHERRACK.defaultBlockState(), 3);
-            block.dropResources(block.defaultBlockState(), (Level)world, pos);
-        }
+            stateToSet = Blocks.NETHERRACK.defaultBlockState();
 
         if (deepslateOres.contains(block.getRegistryName().toString()))
-        {
-            e.setCanceled(true);
-            world.setBlock(pos, Blocks.DEEPSLATE.defaultBlockState(), 3);
+            stateToSet = Blocks.DEEPSLATE.defaultBlockState();
+
+        if(stateToSet == null)
+            return;
+
+        e.setCanceled(true);
+        world.setBlock(pos, stateToSet, 3);
+        if(ForgeHooks.isCorrectToolForDrops(block.defaultBlockState(), e.getPlayer()))
             block.dropResources(block.defaultBlockState(), (Level)world, pos);
-        }
 
         EnhancedCraft.LOGGER.info("Broke block: " + block.getRegistryName());
     }

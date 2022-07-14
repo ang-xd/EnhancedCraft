@@ -3,6 +3,8 @@
   "values": [
     "enhancedcraft:titanium_ore",
     "enhancedcraft:deepslate_titanium_ore",
+    "enhancedcraft:uranium_ore",
+    "enhancedcraft:deepslate_uranium_ore",
     "enhancedcraft:iceite_ore",
     "enhancedcraft:deepslate_iceite_ore",
     "enhancedcraft:titanium_block",
@@ -10,6 +12,9 @@
     "enhancedcraft:endzite_ore",
     "enhancedcraft:titanium_trap",
     "enhancedcraft:fireite_ore",
-    "enhancedcraft:fireite_block"
+    "enhancedcraft:fireite_block",
+    "enhancedcraft:amber_ore",
+    "enhancedcraft:deepslate_amber_ore",
+    "enhancedcraft:amber_block"
   ]
 }

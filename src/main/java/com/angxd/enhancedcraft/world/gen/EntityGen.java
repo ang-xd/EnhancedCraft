@@ -21,7 +21,7 @@ public class EntityGen {
         {
             EnhancedCraft.LOGGER.info("Spawning Enderking");
             addEntityToSpecificBiomes(event, ModdedEntities.ENDERKING.get(),
-                    5, 1, 2, Biomes.THE_END);
+                    1, 0, 1, Biomes.THE_END);
         }
     }
 
