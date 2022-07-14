@@ -42,7 +42,7 @@ public class FreezerBlockEntity extends BlockEntity implements MenuProvider {
     private int progress = 0;
     private int maxProgress = 72;
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -56,23 +56,16 @@ public class FreezerBlockEntity extends BlockEntity implements MenuProvider {
         this.data = new ContainerData() {
             public int get(int index) {
                 switch (index) {
-                    case 0:
-                        return FreezerBlockEntity.this.progress;
-                    case 1:
-                        return FreezerBlockEntity.this.maxProgress;
-                    default:
-                        return 0;
+                    case 0: return FreezerBlockEntity.this.progress;
+                    case 1: return FreezerBlockEntity.this.maxProgress;
+                    default: return 0;
                 }
             }
 
             public void set(int index, int value) {
-                switch (index) {
-                    case 0:
-                        FreezerBlockEntity.this.progress = value;
-                        break;
-                    case 1:
-                        FreezerBlockEntity.this.maxProgress = value;
-                        break;
+                switch(index) {
+                    case 0: FreezerBlockEntity.this.progress = value; break;
+                    case 1: FreezerBlockEntity      .this.maxProgress = value; break;
                 }
             }
 
@@ -171,7 +164,6 @@ public class FreezerBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private static boolean hasWaterInWaterSlot(FreezerBlockEntity entity) {
-        EnhancedCraft.LOGGER.info(entity.itemHandler.getStackInSlot(1).getItem().getRegistryName().toString());
         return entity.itemHandler.getStackInSlot(1).getItem() == Items.ICE;
     }
 

@@ -39,25 +39,4 @@ public class MiscEvents {
             }
         }
     }
-
-    @SubscribeEvent
-    public static void onKeyDown(ScreenEvent.KeyboardKeyPressedEvent e) {
-        EnhancedCraft.LOGGER.info(e.getKeyCode());
-        if(e.getKeyCode() == 70 &&
-                e.getScreen().getMinecraft().player.getInventory().getArmor(3)
-                        .is(ModdedItems.ENDZITE_CHESTPLATE.get()))
-        {
-            e.getScreen().getMinecraft().player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200, 25));
-        }
-    }
-
-    @SubscribeEvent
-    public static void onKeyRelease(ScreenEvent.KeyboardKeyReleasedEvent e) {
-        if(e.getKeyCode() == 70 &&
-                e.getScreen().getMinecraft().player.getInventory().getArmor(3)
-                        .is(ModdedItems.ENDZITE_CHESTPLATE.get()))
-        {
-            e.getScreen().getMinecraft().player.removeEffect(MobEffects.LEVITATION);
-        }
-    }
 }
